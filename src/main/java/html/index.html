@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <header>
@@ -13,7 +15,7 @@
                 <div class="headerSearch">
                     <input type="text" class="headerSearchTerm" placeholder="What are you looking for?">
                     <button type="submit" class="headerSearchButton">
-                        <img id="headerSearchButton" src="Graphics/SearchButton.png"></img>
+                        <img id="headerSearchButton" src="../assets/icons/SearchButton.png"></img>
                     </button>
                 </div>
             </div>
@@ -24,30 +26,30 @@
         <aside id="mainAside">
             <div class="asideElement">
                 <button  class = "asideButton" onclick="showHideButtonOnClick()">
-                    <img id="ShowHideButton" src="Graphics/ShowButton.png" ></img>
+                    <img id="ShowHideButton" src="../assets/icons/ShowButton.png" ></img>
                 </button>
             </div>
             <div class="asideElement">
                 <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                    <img id="DashboardButton" src="Graphics/Dashboard.png"></img>
+                    <img id="DashboardButton" src="../assets/icons/Dashboard.png"></img>
                 </button>
                 <a class="asideText">Dashboard</a>
             </div>
             <div class="asideElement">
                 <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                    <img id="InventoryButton" src="Graphics/DevicesOther.png"></img>
+                    <img id="InventoryButton" src="../assets/icons/DevicesOther.png"></img>
                 </button>
                 <a class="asideText" onclick="mainMenuButtonOnClick()">Inventory</a>
             </div>
             <div class="asideElement">
                 <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                    <img id="UsersButton" src="Graphics/Users.png"></img>
+                    <img id="UsersButton" src="../assets/icons/Users.png"></img>
                 </button>
                 <button  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Users</button>
             </div>
             <div class="asideElement">
                 <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                    <img id="ReportsButton" src="Graphics/Reports.png"></img>
+                    <img id="ReportsButton" src="../assets/icons/Reports.png"></img>
                 </button>
                 <button  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Reports</button>
             </div>
@@ -60,7 +62,7 @@
                         document.getElementById("mainMain").style.width = "calc(100% - 50px)";
                         document.getElementById("mainAside").style.transition = "all 0.2s";
                         document.getElementById("mainMain").style.transition = "all 0.2s";
-                        document.getElementById("ShowHideButton").src = "Graphics/ShowButton.png";
+                        document.getElementById("ShowHideButton").src = "../assets/icons/ShowButton.png";
                     }
                     else{
 
@@ -74,13 +76,13 @@
                         document.getElementById("mainMain").style.width = "calc(100% - 200px)";
                         document.getElementById("mainAside").style.transition = "all 0.2s";
                         document.getElementById("mainMain").style.transition = "all 0.2s";
-                        document.getElementById("ShowHideButton").src = "Graphics/HideButton.png";
+                        document.getElementById("ShowHideButton").src = "../assets/icons/HideButton.png";
                     }else {
                         document.getElementById("mainAside").style.width = "50px";
                         document.getElementById("mainMain").style.width = "calc(100% - 50px)";
                         document.getElementById("mainAside").style.transition = "all 0.2s";
                         document.getElementById("mainMain").style.transition = "all 0.2s";
-                        document.getElementById("ShowHideButton").src = "Graphics/ShowButton.png";
+                        document.getElementById("ShowHideButton").src = "../assets/icons/ShowButton.png";
                     }}
             </script>
         </aside>

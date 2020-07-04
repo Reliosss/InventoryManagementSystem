@@ -78,9 +78,9 @@ header{
 aside{
 	width: 50px;
 	height: calc(100% - 60px);
-	min-height: 400px;
 	float: left;
 	overflow: hidden;
+	display: block;
 }
 
 .asideElement{
@@ -139,7 +139,7 @@ aside{
 main{
 	width: calc(100% - 50px);
 	height: calc(100% - 60px);
-	min-height: 400px;
+	display: block;
 	background-color: green;
 	float: left;
 }
