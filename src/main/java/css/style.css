@@ -7,138 +7,21 @@ body{
 
 header{
 	width: 100%;
-	min-width: 800px;
 	height: 40px;
 	background-color: red;
 }
 
-.headerTitle{
-	line-height: 40px;
-	text-align: center;
-	color:white;
-	text-shadow:1px 1px #353636;
-	background-color: #3399ff;
-	width: 250px;
-	height: 40px;
-	float: left;
-}
-
-.headerTopMenu{
-	background-color: #3399ff;
-	width: 250px;
-	height: 40px;
-	float: Right;
-	line-height: 40px;
-	text-align: center;
-	color:white;
-	text-shadow:1px 1px #353636;
-}
-
-.headerSearchBar {
-	background-color: #3399ff;
-	height: 40px;
-	width: calc(100% - 500px);
-	min-width: 200px;
-	float: left;
-	align-items: center;
-	display: inline-flex;
-}
-
-.headerSearch {
-	width: 100%;
-	position: relative;
-	display: flex;
-}
-
-.headerSearchTerm {
-	color: black;
-	width: 100%;
-	border: 1px solid #353636;
-	border-right: none;
-	padding: 5px;
-	height: 30px;
-	border-radius: 5px 0 0 5px;
-	outline: none;
-	background-color: #3399ff;
-}
-
-
-.headerSearchButton {
-	width: 30px;
-	height: 30px;
-	border: 1px solid #353636;
-	background: #353636;
-	text-align: center;
-	border-radius: 0 5px 5px 0;
-	cursor: pointer;
-	font-size: 20px;
-}
-
-
 aside{
 	width: 50px;
-	height: calc(100% - 60px);
-	float: left;
-	overflow: hidden;
+	height: calc(100vh - 60px);
 	display: block;
-}
-
-.asideElement{
-	height: 38px;
-	padding: 5px;
-	overflow: none;
-	display: flex;
-	align-items:center;
-    justify-content:left;
-}
-
-.asideButton{
-	border: none;
-	padding: 2px 2px;
-	text-align: center;
-	text-decoration: none;
-	background-color:white;
-	cursor: pointer;
-}
-
-.asideButton:active{
-	border: none;
-	padding: 2px 2px;
-	text-align: center;
-	text-decoration: none;
-}
-
-.asideButtonText{
-	font-size: 15px;
-	margin-left: 5px;
-	white-space: nowrap;
-	overflow: hidden;
-	cursor: pointer;
-	border: none;
-	background-color: transparent;
-	text-decoration: none;
-}
-
-.asideButtonText:hover{
-	font-size: 15px;
-	margin-left: 5px;
-	white-space: nowrap;
-	overflow: hidden;
-	cursor: pointer;
-	border: none;
-	background-color: dimgray;
-}
-
-.asideText{
-	font-size: 15px;
-	margin-left: 5px;
-	white-space: nowrap;
-	overflow: hidden;
+	float: left;
+	background-color: yellow;
 }
 
 main{
 	width: calc(100% - 50px);
-	height: calc(100% - 60px);
+	height: calc(100vh - 60px);
 	display: block;
 	background-color: green;
 	float: left;
