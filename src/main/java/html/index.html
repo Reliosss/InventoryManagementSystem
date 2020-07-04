@@ -1,95 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<header>
-    <div class ="headerTitle">Inventory Management System</div>
-    <div class="headerSearchBar">
-        <div class="headerSearch">
-            <input type="text" class="headerSearchTerm" placeholder="What are you looking for?">
-            <button type="submit" class="headerSearchButton">
-                <img id="headerSearchButton" src="Graphics/SearchButton.png"></img>
-            </button>
-        </div>
-    </div>
-    <div class="headerTopMenu">TopMenu</div>
-</header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <header>
+            <div class ="headerTitle">
+                Inventory Management System
+            </div>
+            <div class="headerSearchBar">
+                <div class="headerSearch">
+                    <input type="text" class="headerSearchTerm" placeholder="What are you looking for?">
+                    <button type="submit" class="headerSearchButton">
+                        <img id="headerSearchButton" src="Graphics/SearchButton.png"></img>
+                    </button>
+                </div>
+            </div>
+            <div class="headerTopMenu">
+                TopMenu
+            </div>
+        </header>
+        <aside id="mainAside">
+            <div class="asideElement">
+                <button  class = "asideButton" onclick="showHideButtonOnClick()">
+                    <img id="ShowHideButton" src="Graphics/ShowButton.png" ></img>
+                </button>
+            </div>
+            <div class="asideElement">
+                <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
+                    <img id="DashboardButton" src="Graphics/Dashboard.png"></img>
+                </button>
+                <a class="asideText">Dashboard</a>
+            </div>
+            <div class="asideElement">
+                <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
+                    <img id="InventoryButton" src="Graphics/DevicesOther.png"></img>
+                </button>
+                <a class="asideText" onclick="mainMenuButtonOnClick()">Inventory</a>
+            </div>
+            <div class="asideElement">
+                <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
+                    <img id="UsersButton" src="Graphics/Users.png"></img>
+                </button>
+                <button  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Users</button>
+            </div>
+            <div class="asideElement">
+                <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
+                    <img id="ReportsButton" src="Graphics/Reports.png"></img>
+                </button>
+                <button  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Reports</button>
+            </div>
+            <script>
+                function mainMenuButtonOnClick(){
+                    var x = $("aside").width();
 
-<aside id="mainAside">
-    <div class="asideElement">
-        <button  class = "asideButton" onclick="showHideButtonOnClick()">
-            <img id="ShowHideButton" src="Graphics/ShowButton.png" ></img>
-        </button>
-    </div>
-    <div class="asideElement">
-        <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-            <img id="DashboardButton" src="Graphics/Dashboard.png"></img>
-        </button>
-        <a class="asideText">Dashboard</a>
-    </div>
-    <div class="asideElement">
-        <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-            <img id="InventoryButton" src="Graphics/DevicesOther.png"></img>
-        </button>
-        <a class="asideText" onclick="mainMenuButtonOnClick()">Inventory</a>
-    </div>
-    <div class="asideElement">
-        <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-            <img id="UsersButton" src="Graphics/Users.png"></img>
-        </button>
-        <button  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Users</button>
-    </div>
-    <div class="asideElement">
-        <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-            <img id="ReportsButton" src="Graphics/Reports.png"></img>
-        </button>
-        <button  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Reports</button>
-    </div>
+                    if(x != 50){
+                        document.getElementById("mainAside").style.width = "50px";
+                        document.getElementById("mainMain").style.width = "calc(100% - 50px)";
+                        document.getElementById("mainAside").style.transition = "all 0.2s";
+                        document.getElementById("mainMain").style.transition = "all 0.2s";
+                        document.getElementById("ShowHideButton").src = "Graphics/ShowButton.png";
+                    }
+                    else{
 
+                    }}
 
-    <script>
-				function mainMenuButtonOnClick(){
-					var x = $("aside").width();
+                function showHideButtonOnClick(){
+                    var x = $("aside").width();
 
-					if(x != 50){
-						document.getElementById("mainAside").style.width = "50px";
-					    document.getElementById("mainMain").style.width = "calc(100% - 50px)";
-						document.getElementById("mainAside").style.transition = "all 0.2s";
-					    document.getElementById("mainMain").style.transition = "all 0.2s";
-						document.getElementById("ShowHideButton").src = "Graphics/ShowButton.png";
-					}
-					else{}
-				}
-			</script>
-    <script>
-				function showHideButtonOnClick(){
-					var x = $("aside").width();
-
-					if(x == 50){
-						document.getElementById("mainAside").style.width = "200px";
-					    document.getElementById("mainMain").style.width = "calc(100% - 200px)";
-						document.getElementById("mainAside").style.transition = "all 0.2s";
-					    document.getElementById("mainMain").style.transition = "all 0.2s";
-						document.getElementById("ShowHideButton").src = "Graphics/HideButton.png";
-					}else{
-						document.getElementById("mainAside").style.width = "50px";
-					    document.getElementById("mainMain").style.width = "calc(100% - 50px)";
-						document.getElementById("mainAside").style.transition = "all 0.2s";
-					    document.getElementById("mainMain").style.transition = "all 0.2s";
-						document.getElementById("ShowHideButton").src = "Graphics/ShowButton.png";
-					}
-				}
-			</script>
-</aside>
-<main id="mainMain">
-    main
-</main>
-<footer>
-    stopka
-</footer>
-
-</body>
+                    if(x == 50){
+                        document.getElementById("mainAside").style.width = "200px";
+                        document.getElementById("mainMain").style.width = "calc(100% - 200px)";
+                        document.getElementById("mainAside").style.transition = "all 0.2s";
+                        document.getElementById("mainMain").style.transition = "all 0.2s";
+                        document.getElementById("ShowHideButton").src = "Graphics/HideButton.png";
+                    }else {
+                        document.getElementById("mainAside").style.width = "50px";
+                        document.getElementById("mainMain").style.width = "calc(100% - 50px)";
+                        document.getElementById("mainAside").style.transition = "all 0.2s";
+                        document.getElementById("mainMain").style.transition = "all 0.2s";
+                        document.getElementById("ShowHideButton").src = "Graphics/ShowButton.png";
+                    }}
+            </script>
+        </aside>
+        <main id="mainMain">
+            main
+        </main>
+        <footer>
+            stopka
+        </footer>
+    </body>
 </html>
