@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #002851;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer{
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.mainContainerUpper{
+    font-size: 25px;
+    color: #002851;
+}
+
+.mainContainerMiddle{
+    height: 125px;
+    width: 125px;
+    border-radius: 75px;
+}
+
+.mainContainerMiddleForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainerMiddleForm > input{
+    width: 270px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #EEF2F7;
+    border: none;
+    text-align: center;
+    color: #002851;
+    font-size: 12px;
+}
+
+.mainContainerMiddleForm > .mainContainerMiddleFormSubmit{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #EEF2F7;
+    border: none;
+    color: white;
+    background-color: #002851;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.mainContainerBottom{
+    border-top: 10px;
+    border-color: yellow;
+    height: 20px;
+    width: 100%;
+    font-size: 10px;
+    color: #002851;
+    text-align: center;
+}
