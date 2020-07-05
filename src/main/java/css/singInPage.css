@@ -84,3 +84,12 @@ body{
     color: #002851;
     text-align: center;
 }
+
+input:focus{
+    outline-color: #002851;
+}
+
+a{
+    text-decoration: none;
+    color: #002851;
+}

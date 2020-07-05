@@ -4,41 +4,40 @@
         <meta charset="UTF-8">
         <title>Title</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <header>
             <div class ="headerTitle">
-                Inventory Management System
+                <img src="../assets/icons/storage.svg" height="45" width="45">
+                <a href="#">AMIMS</a>
             </div>
-                <div class="headerSearchBar">
-                    <div class="headerSearch">
-                        <input type="text" class="headerSearchTerm" placeholder="What are you looking for?">
-                        <button type="submit" class="headerSearchButton">
-                            <img id="headerSearchButton" src="../assets/icons/SearchButton.png"></img>
-                        </button>
-                    </div>
-                </div>
             <div class="headerTopMenu">
-                TopMenu
+                <div class="headerAvatar">
+                    <img src = "../assets/graphics/user.png" height="35px" width="35px;">
+                </div>
+                <a>Adrian.Drohomirecki</a>
+                <img src = "../assets/icons/arrowDown.svg" class="arrowButton">
             </div>
         </header>
         <main>
             <aside id="mainAside">
                 <div class="asideElement">
                     <button  class = "asideButton" onclick="showHideButtonOnClick()">
-                        <img id="ShowHideButton" src="../assets/icons/ShowButton.png" ></img>
+                        <img id="ShowHideButton" src="../assets/icons/showButton.png" />
                     </button>
                 </div>
                 <div class="asideElement">
                     <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="DashboardButton" src="../assets/icons/Dashboard.png"></img>
+                        <img id="DashboardButton" src="../assets/icons/Dashboard.png" />
                     </button>
                     <a class="asideText">Dashboard</a>
                 </div>
                 <div class="asideElement">
                     <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="InventoryButton" src="../assets/icons/DevicesOther.png"></img>
+                        <img id="InventoryButton" src="../assets/icons/DevicesOther.png" />
                     </button>
                     <a class="asideText" onclick="mainMenuButtonOnClick()">Inventory</a>
                 </div>
@@ -52,7 +51,7 @@
                     <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
                         <img id="ReportsButton" src="../assets/icons/Reports.png"></img>
                     </button>
-                    <button  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Reports</button>
+                    <a  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Reports</a>
                 </div>
                 <script>
                     function mainMenuButtonOnClick(){
@@ -72,18 +71,15 @@
                         if(x == 50){
                             document.getElementById("mainAside").style.width = "200px";
                             document.getElementById("mainAside").style.transition = "all 0.2s";
-                            document.getElementById("ShowHideButton").src = "../assets/icons/HideButton.png";
+                            document.getElementById("ShowHideButton").src = "../assets/icons/hideButton.png";
                         }else{
                             document.getElementById("mainAside").style.width = "50px";
                             document.getElementById("mainAside").style.transition = "all 0.2s";;
-                            document.getElementById("ShowHideButton").src = "../assets/icons/ShowButton.png";
+                            document.getElementById("ShowHideButton").src = "../assets/icons/showButton.png";
                         }
                     }
 		        </script>
             </aside>
         </main>
-        <footer>
-            stopka
-        </footer>
     </body>
 </html>
