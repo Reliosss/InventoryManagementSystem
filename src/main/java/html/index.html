@@ -19,63 +19,42 @@
                     <img src = "../assets/graphics/user.png" height="28px" width="28px;">
                 </div>
                 <a>Adrian.Drohomirecki</a>
-                <img src = "../assets/icons/ButtonArrowDown.svg" class="ButtonArrowDown.White">
+                <a href="http://onet.pl"><img src = "../assets/icons/ButtonArrowDown.svg" class="ButtonArrowDown" /></a>
             </div>
         </header>
         <main>
             <aside id="mainAside">
-                <div class="asideElement">
-                    <button  class = "asideButton" onclick="showHideButtonOnClick()">
-                        <img id="ShowHideButton" src="../assets/icons/ButtonMenuShow.svg" />
-                    </button>
-                </div>
-                <div class="asideElement">
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="DashboardButton" src="../assets/icons/ButtonDashboard.svg" />
-                    </button>
-                    <button class="asideButtonText" onclick="mainMenuButtonOnClick()">Dashboard</button>
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="DashboardButton" src="../assets/icons/ButtonArrowDownBlue.svg" />
-                    </button>
-                </div>
-
-                <div class="asideElement">
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="InventoryButton" src="../assets/icons/ButtonInventory.svg"><img>
-                    </button>
-                    <button class="asideButtonText" onclick="mainMenuButtonOnClick()">Inventory</button>
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="DashboardButton" src="../assets/icons/ButtonArrowDownBlue.svg" />
-                    </button>
-                </div>
-
-                <div class="asideElement">
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="UsersButton" src="../assets/icons/ButtonUsers.svg"></img>
-                    </button>
-                    <button  class="asideButtonText" onclick="mainMenuButtonOnClick()">Users</button>
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="DashboardButton" src="../assets/icons/ButtonArrowDownBlue.svg" />
-                    </button>
-                </div>
-                <div class="asideElement">
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="ReportsButton" src="../assets/icons/ButtonReports.svg"></img>
-                    </button>
-                    <button  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Reports</Button>
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="DashboardButton" src="../assets/icons/ButtonArrowDownBlue.svg" />
-                    </button>
-                </div>
-                <div class="asideElement">
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="SettingsButton" src="../assets/icons/ButtonSettings.svg"></img>
-                    </button>
-                    <button  class = "asideButtonText" onclick="mainMenuButtonOnClick()">Settings</Button>
-                    <button  class = "asideButton" onclick="mainMenuButtonOnClick()">
-                        <img id="DashboardButton" src="../assets/icons/ButtonArrowDownBlue.svg" />
-                    </button>
-                </div>
+                <a href="#" class = "asideElement" onclick="showHideButtonOnClick()">
+                    <img id="ShowHideButton" src="../assets/icons/ButtonMenuShow.svg"/>
+                </a>
+                <a href="onet.pl" class="asideElement">
+                    <svg class="svgtest" xmlns="http://www.w3.org/2000/svg" fill="#002851" width="24px" height="24px">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 6h18V4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4v-2H3V6zm10 6H9v1.78c-.61.55-1 1.33-1 2.22s.39 1.67 1 2.22V20h4v-1.78c.61-.55 1-1.34 1-2.22s-.39-1.67-1-2.22V12zm-2 5.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM22 8h-6c-.5 0-1 .5-1 1v10c0 .5.5 1 1 1h6c.5 0 1-.5 1-1V9c0-.5-.5-1-1-1zm-1 10h-4v-8h4v8z"/>
+                    </svg>
+                    <p>Reports</p>
+                    <img class="svgtest" id="ButtonArrowDownBlue" src="../assets/icons/ButtonArrowDownBlue.svg"/>
+                </a>
+                <a href="onet.pl" class="asideElement">
+                    <img id="ReportsButton" src="../assets/icons/ButtonInventory.svg"/>
+                    <p>Reports</p>
+                    <img id="ButtonArrowDownBlue" src="../assets/icons/ButtonArrowDownBlue.svg"/>
+                </a>   
+                <a href="onet.pl" class="asideElement">
+                    <img id="ReportsButton" src="../assets/icons/ButtonUsers.svg"/>
+                    <p>Reports</p>
+                    <img id="ButtonArrowDownBlue" src="../assets/icons/ButtonArrowDownBlue.svg"/>
+                </a>   
+                <a href="onet.pl" class="asideElement">
+                    <img id="ReportsButton" src="../assets/icons/ButtonReports.svg"/>
+                    <p>Reports</p>
+                    <img id="ButtonArrowDownBlue" src="../assets/icons/ButtonArrowDownBlue.svg"/>
+                </a>    
+                <a href="onet.pl" class="asideElement">
+                    <img id="SettingsButton" src="../assets/icons/ButtonSettings.svg"/>
+                    <p>Settings</p>
+                    <img id="ButtonArrowDownBlue" src="../assets/icons/ButtonArrowDownBlue.svg"/>
+                </a>
                 <script>
                     function mainMenuButtonOnClick(){
                         var x = $("aside").width();

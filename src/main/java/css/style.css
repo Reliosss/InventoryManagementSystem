@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+a:link {
+	text-decoration: none;
+	color: #002851;
+  }
+  
+  a:visited {
+	text-decoration: none;
+	color: #002851;
+  }
+  
+  a:hover {
+	text-decoration: none;
+	color: #002851;
+  }
+  
+  a:active {
+	text-decoration: none;
+	color: #002851;
+  }
+
 body{
 	margin: 0;
 	padding: 0;
@@ -56,11 +76,14 @@ header{
 	border-radius: 14px;
 }
 
-.ButtonArrowDown{
+.buttonArrowDown{
 	height: 18px;
 	width: 18px;
-	marign-left: 105px;
+	margin-left: 105px;
 	margin-right: 5px;
+	border: none;
+	padding: 2px 2px;
+	background-color:transparent;
 }
 
 /* Aside things*/
@@ -74,45 +97,29 @@ aside{
 
 .asideElement{
 	height: 38px;
-	padding: 5px;
+	padding: 2px;
+	margin-left: 3px;
 	display: flex;
 	align-items:center;
-    justify-content:left;
-}
-
-.asideButton{
-	border: none;
-	padding: 2px 2px;
-	text-align: center;
-	text-decoration: none;
-	background-color:transparent;
-	cursor: pointer;
-}
-
-.asideButton:active{
-	border: none;
-	padding: 2px 2px;
-	text-align: center;
-	text-decoration: none;
-}
-
-.asideButtonText{
-	font-size: 15px;
-	margin-left: 5px;
-	white-space: nowrap;
+	justify-content:space-between;
+	text-decoration:none;
 	overflow: hidden;
-	border: none;
-	text-decoration: none;
-	background-color: transparent;
-	color: #002851;
+	fill:red;
 }
 
-.asideText{
-	font-size: 15px;
-	margin-left: 5px;
-	white-space: nowrap;
-	overflow: hidden;
-	color: white;
+.asideElement:hover {
+    color:White;
+    background-color:#ABB8C5;
+}
+
+.asideElement:hover .svgtest{
+	fill:White;
+}
+
+.asideElement p{
+	width: 130px;
+	text-align: center;
+	min-width: 100px;
 }
 
 /* Main things*/
