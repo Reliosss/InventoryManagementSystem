@@ -66,7 +66,7 @@ header{
 
 /* Aside things*/
 aside{
-	width: 50px;
+	width: 35px;
 	height: calc(100vh - 60px);
 	float: left;
 	background-color: white;
@@ -86,7 +86,7 @@ aside{
 	padding: 2px 2px;
 	text-align: center;
 	text-decoration: none;
-	background-color:white;
+	background-color:transparent;
 	cursor: pointer;
 }
 
@@ -104,6 +104,7 @@ aside{
 	overflow: hidden;
 	border: none;
 	text-decoration: none;
+	background-color: transparent;
 }
 
 .asideText{
