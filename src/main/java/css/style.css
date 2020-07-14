@@ -4,22 +4,22 @@
 a:link {
 	text-decoration: none;
 	color: #002851;
-  }
+}
   
-  a:visited {
+a:visited {
 	text-decoration: none;
 	color: #002851;
-  }
+}
   
-  a:hover {
+a:hover {
 	text-decoration: none;
 	color: #002851;
-  }
+}
   
-  a:active {
+a:active {
 	text-decoration: none;
 	color: #002851;
-  }
+}
 
 body{
 	margin: 0;
@@ -86,46 +86,65 @@ header{
 	background-color:transparent;
 }
 
-/* Aside things*/
+/* Menu in aside*/
 aside{
 	width: 35px;
-	height: calc(100vh - 40px);
+	height: calc(100vh - 52px);
 	float: left;
 	background-color: white;
 	overflow: hidden;
+	padding: 6px;
 }
 
-.asideElement{
-	height: 38px;
-	padding: 2px;
-	margin-left: 3px;
+#menu{
+	padding: 0;
+	margin: 0;
+}
+.showHideNavBarButton{
+	margin: 5px;
+}
+
+ul#menu li{
+	list-style-type: none;
 	display: flex;
+	flex-direction: column;
 	align-items:center;
-	justify-content:space-between;
-	text-decoration:none;
-	overflow: hidden;
-	fill:red;
+	justify-content:center;
 }
 
-.asideElement:hover {
-    color:White;
-    background-color:#ABB8C5;
+ul#menu li div{
+	width: 100%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.asideElement:hover .svgtest{
-	fill:White;
+ul#menu li a{
+	margin: 6px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
 }
 
-.asideElement p{
-	width: 130px;
-	text-align: center;
-	min-width: 100px;
+ul#menu li ol{
+	display: none;
+	width: 100%;
+	padding-left: 0;
+}
+
+ul#menu li ol li a{
+	font-size: 13px;
 }
 
 /* Main things*/
 main{
+	padding-bottom: 12px;
 	width: 100%;
-	height: calc(100vh - 40px);
+	height: calc(100vh - 52px);
 	display: block;
 	background-color: #f2f2f2;
 	float: left;
